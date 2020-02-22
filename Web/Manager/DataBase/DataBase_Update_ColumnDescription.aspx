@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="DataBase_Update_ColumnDescription.aspx.cs" Inherits="Web.Manager.DataBase.DataBase_Update_ColumnDescription" %>

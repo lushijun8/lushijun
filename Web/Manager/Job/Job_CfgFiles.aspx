@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Job_CfgFiles.aspx.cs" Inherits="Web.Manager.Job.Job_CfgFiles" %>

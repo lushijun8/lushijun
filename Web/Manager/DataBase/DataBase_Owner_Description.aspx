@@ -1,0 +1,2 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="DataBase_Owner_Description.aspx.cs" Inherits="Web.Manager.DataBase.DataBase_Owner_Description" %>
+<%@ OutputCache Duration="60" VaryByParam="*"%>

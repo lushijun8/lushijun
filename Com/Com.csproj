@@ -1,0 +1,454 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F0715EE1-3A79-4B43-975D-CD066B51C132}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Com</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Com</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BeITMemcached, Version=1.0.4875.31342, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\BeITMemcached.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.ADODB, Version=2.8.0.0, Culture=neutral">
+      <HintPath>..\Doc\Dll\Interop.ADODB.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.CDO, Version=1.0.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Doc\Dll\Interop.CDO.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Excel, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Doc\Dll\Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.PowerPoint, Version=2.8.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Doc\Dll\Interop.PowerPoint.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Word, Version=8.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Doc\Dll\Interop.Word.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching, Version=1.1.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Microsoft.Practices.EnterpriseLibrary.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=1.1.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Configuration, Version=1.1.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Microsoft.Practices.EnterpriseLibrary.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=1.0.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=1.1.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging, Version=1.1.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=1.1.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging.Sinks.Database, Version=1.1.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Microsoft.Practices.EnterpriseLibrary.Logging.Sinks.Database.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.OracleClient">
+      <Name>System.Data.OracleClient</Name>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.DirectoryServices">
+      <Name>System.DirectoryServices</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <Reference Include="ThoughtWorks.QRCode">
+      <HintPath>..\DLL\ThoughtWorks.QRCode.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutoCode\ASPXCoder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AutoCode\BackUp.cs" />
+    <Compile Include="AutoCode\CreateTableCoder.cs" />
+    <Compile Include="AutoCode\CSCoder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AutoCode\EntityCoder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AutoCode\SPCoder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AutoCode\TableDescriptionCoder.cs" />
+    <Compile Include="Common\Charset.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\DateUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\DoubleUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\EMailUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\EncDec.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\Entity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\HardwareUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\HashTableUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\HtmlSelectUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\MoneyUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\NetPage.cs" />
+    <Compile Include="Common\NumberUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\RandomUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\ScriptUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\SpellUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\StringUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\ValidateUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Config\ConfigUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Config\SystemConfig.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\Cache.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\DataBaseHelper.cs" />
+    <Compile Include="Data\DatabaseOperater.cs" />
+    <Compile Include="Data\MemCached.cs" />
+    <Compile Include="Data\SqlServer\SqlCore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\SqlServer\SqlParameterCore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\SqlServer\SqlProcCore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\SqlServer\Entity\EXTENDED_PROPERTIES.cs" />
+    <Compile Include="Data\SqlServer\Entity\SYSCOLUMNS.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\SqlServer\Entity\SYSCOMMENTS.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\SqlServer\Entity\SYSINDEXES.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\SqlServer\Entity\SYSMETADATA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\SqlServer\Entity\SYSMETAJOIN.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\SqlServer\Entity\SYSOBJECTS.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\SqlServer\Entity\SYSPROPERTIES.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\SqlServer\Entity\SYSTYPES.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Drawing\DrawingBarCode.cs" />
+    <Compile Include="Drawing\ImageUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Drawing\QrCode.cs" />
+    <Compile Include="Drawing\WebPageBitmap.cs" />
+    <Compile Include="Fax\FaxUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="File\ExcelUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="File\FileLog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="File\FileUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="File\OfficeUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="File\PDFUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="File\PowerPointUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="File\RTFUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="File\UploadFile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="File\WordUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Globalization\ChineseParse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Globalization\ChineseSegmenter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Globalization\ChineseWordsHashCountSet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Globalization\ChineseWordUnit.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GridUtil\DataGridUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GridUtil\ListViewUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Json\Convert.cs" />
+    <Compile Include="Json\JsonUtil.cs" />
+    <Compile Include="Mail\MailUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mail\SendMail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Net\HtmlUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Net\IISUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Net\Image.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Net\IPUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Net\NetUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Net\SessionUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Net\TelnetUtil.cs" />
+    <Compile Include="Net\UrlUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Net\UrlRequest.cs" />
+    <Compile Include="UserControl\AspNetPager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserControl\Calendar.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserControl\CheckLinkButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserControl\CommonUserControl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserControl\PageLinkButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserControl\SinglePage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserControl\TabPage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserControl\TreeView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserControl\WebDataGrid.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserControl\WebReport.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserControl\XmlTree.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Web\PageUtil.cs" />
+    <Compile Include="Web\WebUI.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Xml\XmlUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

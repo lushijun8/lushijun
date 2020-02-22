@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E621442D-39F3-4D57-A783-5CE511D36FB4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Common</RootNamespace>
+    <AssemblyName>Common</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BeITMemcached.dll" />
+    <Content Include="BouncyCastle.Crypto.dll" />
+    <Content Include="ChinaPay.dll" />
+    <Content Include="CrystalDecisions.CrystalReports.Engine.dll" />
+    <Content Include="CrystalDecisions.ReportSource.dll" />
+    <Content Include="CrystalDecisions.Shared.dll" />
+    <Content Include="FredCK.FCKeditorV2.dll" />
+    <Content Include="ICSharpCode.SharpZipLib.dll" />
+    <Content Include="Interop.ADODB.dll" />
+    <Content Include="Interop.CDO.dll" />
+    <Content Include="Interop.CHINAPAYLib.dll" />
+    <Content Include="Interop.CPNPC.dll" />
+    <Content Include="Interop.Excel.dll" />
+    <Content Include="Interop.PowerPoint.dll" />
+    <Content Include="Interop.Word.dll" />
+    <Content Include="ItrusDotNetCertAPI 1.4.dll" />
+    <Content Include="log4net.dll" />
+    <Content Include="Microsoft.Practices.EnterpriseLibrary.Caching.dll" />
+    <Content Include="Microsoft.Practices.EnterpriseLibrary.Common.dll" />
+    <Content Include="Microsoft.Practices.EnterpriseLibrary.Configuration.dll" />
+    <Content Include="Microsoft.Practices.EnterpriseLibrary.Data.dll" />
+    <Content Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll" />
+    <Content Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll" />
+    <Content Include="Microsoft.Practices.EnterpriseLibrary.Logging.dll" />
+    <Content Include="Microsoft.Practices.EnterpriseLibrary.Logging.Sinks.Database.dll" />
+    <Content Include="Microsoft.Practices.ObjectBuilder.dll" />
+    <Content Include="netpay.dll" />
+    <Content Include="Newtonsoft.Json.dll" />
+    <Content Include="Novell.Directory.Ldap.dll" />
+    <Content Include="ServiceStack.Common.dll" />
+    <Content Include="ServiceStack.Interfaces.dll" />
+    <Content Include="ServiceStack.Redis.dll" />
+    <Content Include="ServiceStack.Text.dll" />
+    <Content Include="SoufunLab.Framework.dll" />
+    <Content Include="System.Net.Json.dll" />
+    <Content Include="ThoughtWorks.QRCode.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="netpay.lib" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="DataBase_Table_My_Delete_Json.aspx.cs" Inherits="Web.Manager.DataBase.DataBase_Table_My_Delete_Json" %>

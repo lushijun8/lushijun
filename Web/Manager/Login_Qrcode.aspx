@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login_Qrcode.aspx.cs" Inherits="Web.Manager.Login_Qrcode" %>
